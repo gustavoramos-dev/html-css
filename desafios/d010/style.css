@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'idroid';
+    src: url(fontes/idroid.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    margin: 0px;
+}
+
+header {
+    background: linear-gradient(to bottom, #3DDB84, #185132);
+    padding: 0px auto 0px auto;
+    font-size: 0.9em;
+}
+
+.cabecalho {
+    color: white;
+    text-align: center;
+    padding: 0px auto 0px auto;
+    
+}
+
+header > h1 {
+    padding: 20px auto;
+    margin-top: 0px;
+    padding-top: 25px;
+    font-size: 1.8em;}
+
+.nav {
+    text-align: left;
+    margin: 7px;
+    text-decoration: none;
+    color: white;
+    padding-top: 1px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+a:hover {
+    background-color: #2B985D;
+}
+
+a {
+    margin: 5px;
+    padding: 5px;
+}
+
+.fundo {
+    background-color: #E8E7C2;
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+.inside {
+    background-color: white;
+    width: 651px;
+    height: auto;
+    margin: auto;
+    padding: 20px 10px 20px 10px;
+    border-radius: 0px 0px 9px 9px;
+}
+
+.artigo {
+    margin-top: 0px;
+}
+
+.imagem {
+    display: block;
+    margin: auto;
+}
+
+h3 {
+    text-align: center;
+    color: white;
+    background-color: #2FA866;
+    border-radius: 5px 5px 0px 0px;
+    text-align: left;
+    padding: 5px;
+}
+
+.tabela {
+    background-color: #C5EBD6;
+    border-radius: 5px 5px 9px 9px;
+    padding-bottom: 10px;
+}
+
+p.cabecalho {
+    padding: 0px 10px;
+}
+
+p {
+    padding: 0px 10px;
+    text-indent: 30px;
+    font-size: 1.15em;
+}
+
+.lista {
+    display: flex;
+    gap: 150px; /* espaço entre as listas */
+}
+
+.lista1 {
+    padding-left: 5px;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    background-color: #185132;
+}
+
+footer > p {
+    padding: 4px;
+    margin: 0px;
+}
+
+h2 {
+    background: linear-gradient(to right, #C6ECD7, #fff);
+    font-family: 'idroid', sans-serif;
+    color: #276543;
+    padding-left: 10px;
+}
+
+article > h1 {
+    font-family: 'idroid', sans-serif;
+    color: #276543;
+    font-size: 1.8em;
+}
+
+span {
+    color: #42795B;
+}
+
+.video {
+    margin: 0px 41px 0px 41px;
+    padding: 20px 0px 20px 0px;
+}
+
+div.video {
+    background-color: #043D1C;
+    margin: auto;
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 651px;
+    height: 355px;
+}

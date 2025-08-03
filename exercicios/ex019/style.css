@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/* 
+    Em HTML é ID    = em CSS é # (so pode um elemento)
+    Em HTML é class = em CSS é . (pode vários elementos)
+*/
+
+body {
+    background-color: #d6fde9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #1e402f;
+}
+
+h1#principal {
+    text-align: center;
+    background-color: #3c805e;
+    color: #fff;
+} /* Daria pra tirar o h1 também, aí todos que tiverem o id de 'principal' teriam essas configurações, MAS não é recomendado (até pelo W3C) */
+
+h2 {
+    color: #3c805e;
+}
+
+.basico {
+    color: #3c805e;
+} /* Geralmente no class, não colocamos o nome da tag, pois é mais genérico */
+
+.intermediario {
+    color: #80793c;
+}
+
+.avancado {
+    color: #803c3c;
+}
+
+.destaque {
+    background-color: #c5c56070;
+}

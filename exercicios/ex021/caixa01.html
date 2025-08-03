@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 { /* Box-level (E da pra inverter, usando a tag 'display: inline;' na CSS por ex) */
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+            border: 10px solid darkslategray; /* Atalho para definir a largura, estilo e cor da borda 
+            (border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;)*/
+
+            padding: 10px; /* Funciona como o ponteiro de um relógio (sentido horário), sendo a sequência com 4: top, right, bottom, left. E se colocado apenas um valor, aplica-se a todos os lados. E se colocado 2 valores, o primeiro é aplicado a cima e a baixo, e o segundo à direita e à esquerda. 
+            (padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;) */
+
+            margin: 20px 20px 40px 20px; /* Atalho para definir as margens (margin-top, margin-right, margin-bottom, margin-left) (sentido horário denovo)
+            (margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;) 
+            (Também podemos usar '20px auto 40px auto' nessa situação para que a margin da direita e da esquerda fiquem centralizadas.). E para colocar qualquer caixa no meio, usamos 'margin: auto;'*/
+
+            outline: 5px dashed salmon; /* Atalho para definir a largura, estilo e cor do contorno (outline-width, outline-style, outline-color) 
+            (outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;)*/
+        }
+
+        a { /* Inline-level */
+            border:10px solid red;
+
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplo de box-level, mas os <a href="#">links são exemplo de caixas inline level.</a> Vamos ver como tudo isso funciona.</p>
+</body>
+</html>

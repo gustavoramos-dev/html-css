@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem-flexivel"> <!-- Colocamos sempre 50px a mais para garantir que não ira ser criada a barra de rolagem lateral, e é NECESSÁRIO que seja um embaixo do outro, seguindo a ordem de menor para maior, para que funcione corretamente --> <!-- Usando o 'max-width', precisa ser em ordem crescente, ou seja, do menor para o maior (sendo a foto base no fim e a menor no início), se for 'min-width', deve ser do maior para o menor -->
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áutidos em HTML5</p>
+    <audio autoplay controls preload="metadata"> <!-- O autoplay é para que o áudio comece a tocar assim que a página é carregada, e o controls é para que apareça a barra de controle do áudio, e o preload é para que o áudio seja carregado apenas algumas informações do áudio, para que o áudio não seja carregado totalmente, e só quando for tocado -->
+        <source src="midia/musica-youtube.mp3" type="audio/mpeg">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/musica-youtube.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+    <!-- É recomendável colocar outros tipos de áudio, além do mp3, como ogg e wav (embora wav seja extremamente pesado), que praticamente ja roda em todos os navegadores -->
+</body>
+</html>
