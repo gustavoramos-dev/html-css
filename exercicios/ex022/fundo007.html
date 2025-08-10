@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #container {
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%; /* para ocupar 100% do tamanho do conteudo que limitamos com o height e width */
+            position: relative; /* Nem precisa colocar porque todo box no html ja tem essa característica, mas colocamos para ser mais explícito */
+            height: 500px;
+            padding: 10px;
+            background-color: purple;
+        }
+
+        #conteudo {
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            
+            position: absolute; /* com isso podemos configurar 2 propiedades (left e top) (podemos colocar em qualquer lugar) */
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+            
+            left: 50%;
+            top: 50%; /* se deixarmos assim, ele vai usar o ponto mais extremo da esquerda superior da caixa amarela como ponto de referencia, e nao ficaria no meio, dai usamos o transform para centralizar */
+
+            transform: translate(-50%, -50%); /* transforma o conteudo em um ponto central, e assim ele vai ficar no meio da caixa amarela */
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo"> <!-- Para alinharmos verticalmente, precisamos ter a presença / característica de um conteiner e de um conteudo -->
+
+        </article>
+    </section>
+</body>
+</html>
