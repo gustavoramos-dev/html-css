@@ -3,21 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body {
             height: 100vh; /* vh = viewport (tudo que mostra na tela) */
-            background-color: black;
+            /* background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center top;
-            background-repeat: repeat-y; /* Para que mesmo que o conteúdo seja grande, a imagem repetir na vertical (apenas vertical, por isso o "y") */
-            background-size: cover; /* Para que a imagem fique sempre no fundo da tela sem distorcer, porem as vezes acaba sendo cortada um pouco */
+            background-repeat: no-repeat; /* Para que mesmo que o conteúdo seja grande, a imagem repetir na vertical (apenas vertical, por isso o "y")  <---
+            background-size: cover;  --> Para que a imagem fique sempre no fundo da tela sem distorcer, porem as vezes acaba sendo cortada um pouco  <---
+            --> Para rolarmos a tela e o fundo ficar travado, usamos um vinculo, chamado attachement (o padrão é "scroll", mas usamos "fixed" para ficar fixo)  <---
+            background-attachment: fixed; */
+
+            /* Shorthand - background 
+                color > image > position > repeat > [size] > attachement
+            */
+
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover; /* o cover não funciona no shorthand, por isso usamos ele aqui, mas ele iria depois do no repeat */
+
 
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
